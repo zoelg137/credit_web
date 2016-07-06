@@ -7,14 +7,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <Link Rel="icon" href="/hplus/img/kuaiyishou.ico" type=”image/x-icon”>
 
     <title>H+ 后台主题UI框架 - 首页示例四</title>
-
-    <link rel="shortcut icon" href="favicon.ico"> <link href="hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-    <link href="hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="hplus/css/animate.min.css" rel="stylesheet">
-    <link href="hplus/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+    <jsp:include page="/common/_meta.jsp"></jsp:include>
 
 </head>
 
@@ -22,401 +18,371 @@
 
     <div id="wrapper">
         <div id="page-wrapper" class="gray-bg">
-            <div class="row border-bottom white-bg">
-                <nav class="navbar navbar-static-top" role="navigation">
-                    <div class="navbar-header">
-                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                            <i class="fa fa-reorder"></i>
-                        </button>
-                        <a href="#" class="navbar-brand">Hplus</a>
-                    </div>
-                    <div class="navbar-collapse collapse" id="navbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a aria-expanded="false" role="button" href="index.html"> 返回首页</a>
-                            </li>
-                            <li class="dropdown">
-                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">M菜单列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
-                                <ul role="menu" class="dropdown-menu">
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                    <li><a href="">菜单列表</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                        <ul class="nav navbar-top-links navbar-right">
-                            <li>
-                                <a href="login.html">
-                                    <i class="fa fa-sign-out"></i> 退出
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+             <jsp:include page="/common/_menu.jsp"></jsp:include>
+            
             <div class="wrapper wrapper-content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <span class="label label-success pull-right">月</span>
-                                    <h5>浏览量</h5>
-                                </div>
-                                <div class="ibox-content">
-                                    <h1 class="no-margins">386,200</h1>
-                                    <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i>
-                                    </div>
-                                    <small>总计浏览量</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <span class="label label-info pull-right">年</span>
-                                    <h5>订单</h5>
-                                </div>
-                                <div class="ibox-content">
-                                    <h1 class="no-margins">80,800</h1>
-                                    <div class="stat-percent font-bold text-info">20% <i class="fa fa-level-up"></i>
-                                    </div>
-                                    <small>新订单</small>
-                                </div>
-                            </div>
-                        </div>
+                <!-- 图片轮播 -->
+                 <div class="row">
+                 <div class="col-sm-12">
+                 
+                 </div>
+                 </div>
+                
+                    <!-- 优质债权和债权转让 -->
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5>债权信息</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
+										</a> <a class="close-link"> <i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<table class="table table-hover no-margins">
+										<thead>
+											<tr>
+												<th>所在地</th>
+												<th>债务人</th>
+												<th>金额(万元)</th>
+												<th>佣金</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><span class="label label-primary">河南</span></td>
+												<td>谭*晓</td>
+												<td><i class="fa fa-clock-o"></i> 1.40</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
+												<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-warning">湖南</span></td>
+												<td>徐子崴</td>
+												<td><i class="fa fa-clock-o"></i> 10.40</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
+												<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-warning">江苏</span></td>
+												<td>姜岚昕</td>
+												<td><i class="fa fa-clock-o"></i> 1.30</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>
+													54%-60%</td>
+													<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-warning">江苏</span></td>
+												<td>武汉大兵哥</td>
+												<td><i class="fa fa-clock-o"></i> 2.20</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>12%-25%</td>
+												<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-primary">湖北</span></td>
+												<td>荆莹儿</td>
+												<td><i class="fa fa-clock-o"></i> 9.40</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>
+													22%-30%</td>
+													<td>查看</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5>债权转让</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
+										</a> <a class="close-link"> <i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+																		<table class="table table-hover no-margins">
+										<thead>
+											<tr>
+												<th>所在地</th>
+												<th>债务人</th>
+												<th>金额(万元)</th>
+												<th>佣金</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><span class="label label-primary">河南</span></td>
+												<td>谭*晓</td>
+												<td><i class="fa fa-clock-o"></i> 1.40</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
+												<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-warning">湖南</span></td>
+												<td>徐子崴</td>
+												<td><i class="fa fa-clock-o"></i> 10.40</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
+												<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-warning">江苏</span></td>
+												<td>姜岚昕</td>
+												<td><i class="fa fa-clock-o"></i> 1.30</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>
+													54%-60%</td>
+													<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-warning">江苏</span></td>
+												<td>武汉大兵哥</td>
+												<td><i class="fa fa-clock-o"></i> 2.20</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>12%-25%</td>
+												<td>查看</td>
+											</tr>
+											<tr>
+												<td><span class="label label-primary">湖北</span></td>
+												<td>荆莹儿</td>
+												<td><i class="fa fa-clock-o"></i> 9.40</td>
+												<td class="text-navy"><i class="fa fa-level-up"></i>
+													22%-30%</td>
+													<td>查看</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+                     <!--  -->
 
-                        <div class="col-md-4">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <span class="label label-primary pull-right">今天</span>
-                                    <h5>访问人次</h5>
-                                </div>
-                                <div class="ibox-content">
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">&yen; 406,420</h1>
-                                            <div class="font-bold text-navy">44% <i class="fa fa-level-up"></i> <small>增长较快</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">206,120</h1>
-                                            <div class="font-bold text-navy">22% <i class="fa fa-level-up"></i> <small>增长较慢</small>
-                                            </div>
-                                        </div>
-                                    </div>
+                   <!-- 客户资料信息 -->
+		       <div class="row">
+		            <div class="col-sm-12">
+		                <div class="tabs-container">
+		                    <ul class="nav nav-tabs">
+		                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 资深不良处置专家</a></li>
+		                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">资深诉讼律师</a></li>
+		                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">资深诉财经、法制媒体人</a></li>
+		                    </ul>
+		                    <div class="tab-content">
+		                        <div id="tab-1" class="tab-pane active">
+		                            <div class="panel-body">
+		                                <div class="row">
+												<div class="col-sm-4">
+													<div class="contact-box">
+														<a href="profile.html">
+															<div class="col-sm-4">
+																<div class="text-center">
+																	<img alt="image"
+																		class="img-circle m-t-xs img-responsive"
+																		src="hplus/img/a2.jpg">
+																	<div class="m-t-xs font-bold">CTO</div>
+																</div>
+															</div>
+															<div class="col-sm-8">
+																<h3>
+																	<strong>奔波儿灞</strong>
+																</h3>
+																<p>
+																	<i class="fa fa-map-marker"></i> 甘肃·兰州
+																</p>
+																<address>
+																	<strong>Baidu, Inc.</strong><br>
+																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
+																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
+																</address>
+															</div>
+															<div class="clearfix"></div>
+														</a>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="contact-box">
+														<a href="profile.html">
+															<div class="col-sm-4">
+																<div class="text-center">
+																	<img alt="image"
+																		class="img-circle m-t-xs img-responsive"
+																		src="hplus/img/a1.jpg">
+																	<div class="m-t-xs font-bold">营销总监</div>
+																</div>
+															</div>
+															<div class="col-sm-8">
+																<h3>
+																	<strong>灞波儿奔</strong>
+																</h3>
+																<p>
+																	<i class="fa fa-map-marker"></i> 四川·成都
+																</p>
+																<address>
+																	<strong>Taobao, Inc.</strong><br>
+																	E-mail:xxx@taobao.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
+																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
+																</address>
+															</div>
+															<div class="clearfix"></div>
+														</a>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="contact-box">
+														<a href="profile.html">
+															<div class="col-sm-4">
+																<div class="text-center">
+																	<img alt="image"
+																		class="img-circle m-t-xs img-responsive"
+																		src="hplus/img/a3.jpg">
+																	<div class="m-t-xs font-bold">Marketing manager</div>
+																</div>
+															</div>
+															<div class="col-sm-8">
+																<h3>
+																	<strong>Monica Smith</strong>
+																</h3>
+																<p>
+																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
+																</p>
+																<address>
+																	<strong>Baidu, Inc.</strong><br>
+																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
+																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
+																</address>
+															</div>
+															<div class="clearfix"></div>
+														</a>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="contact-box">
+														<a href="profile.html">
+															<div class="col-sm-4">
+																<div class="text-center">
+																	<img alt="image"
+																		class="img-circle m-t-xs img-responsive"
+																		src="hplus/img/a4.jpg">
+																	<div class="m-t-xs font-bold">攻城师</div>
+																</div>
+															</div>
+															<div class="col-sm-8">
+																<h3>
+																	<strong>Michael Zimber</strong>
+																</h3>
+																<p>
+																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
+																</p>
+																<address>
+																	<strong>Baidu, Inc.</strong><br>
+																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
+																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
+																</address>
+															</div>
+															<div class="clearfix"></div>
+														</a>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="contact-box">
+														<a href="profile.html">
+															<div class="col-sm-4">
+																<div class="text-center">
+																	<img alt="image"
+																		class="img-circle m-t-xs img-responsive"
+																		src="hplus/img/a5.jpg">
+																	<div class="m-t-xs font-bold">射鸡师</div>
+																</div>
+															</div>
+															<div class="col-sm-8">
+																<h3>
+																	<strong>作家崔成浩</strong>
+																</h3>
+																<p>
+																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
+																</p>
+																<address>
+																	<strong>Baidu, Inc.</strong><br>
+																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
+																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
+																</address>
+															</div>
+															<div class="clearfix"></div>
+														</a>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="contact-box">
+														<a href="profile.html">
+															<div class="col-sm-4">
+																<div class="text-center">
+																	<img alt="image"
+																		class="img-circle m-t-xs img-responsive"
+																		src="hplus/img/a6.jpg">
+																	<div class="m-t-xs font-bold">射鸡师</div>
+																</div>
+															</div>
+															<div class="col-sm-8">
+																<h3>
+																	<strong>韩寒</strong>
+																</h3>
+																<p>
+																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
+																</p>
+																<address>
+																	<strong>Baidu, Inc.</strong><br>
+																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
+																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
+																</address>
+															</div>
+															<div class="clearfix"></div>
+														</a>
+													</div>
+												</div>
+											</div>
+		                            </div>
+		                        </div>
+		                        <div id="tab-2" class="tab-pane">
+		                            <div class="panel-body">
+		                                <strong>移动设备优先</strong>
+		                                <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
+		                            </div>
+		                        </div>
+		                       <div id="tab-3" class="tab-pane">
+		                            <div class="panel-body">
+		                                <strong>移动互联网</strong>
+		                                <p>在 Bootstrap 3 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+			        </div>
+                    
+                    <!-- 业务资讯-->                   
 
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <h5>月收入</h5>
-                                    <div class="ibox-tools">
-                                        <span class="label label-primary">2015.02 更新</span>
-                                    </div>
-                                </div>
-                                <div class="ibox-content no-padding">
-                                    <div class="flot-chart m-t-lg" style="height: 55px;">
-                                        <div class="flot-chart-content" id="flot-chart1"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content">
-                                    <div>
-                                        <span class="pull-right text-right">
-                                        <small>在过去的一个月销售的平均值：<strong>山东</strong></small>
-                                            <br/>
-                                            所有销售： 162,862
-                                        </span>
-                                        <h3 class="font-bold no-margins">
-                                        半年收入利润率
-                                    </h3>
-                                        <small>市场部</small>
-                                    </div>
-
-                                    <div class="m-t-sm">
-
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div>
-                                                    <canvas id="lineChart" height="114"></canvas>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <ul class="stat-list m-t-lg">
-                                                    <li>
-                                                        <h2 class="no-margins">2,346</h2>
-                                                        <small>总订单</small>
-                                                        <div class="progress progress-mini">
-                                                            <div class="progress-bar" style="width: 48%;"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <h2 class="no-margins ">4,422</h2>
-                                                        <small>最近一个月订单</small>
-                                                        <div class="progress progress-mini">
-                                                            <div class="progress-bar" style="width: 60%;"></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="m-t-md">
-                                        <small class="pull-right">
-                                        <i class="fa fa-clock-o"> </i>
-                                        2015.02.30更新
-                                    </small>
-                                        <small>
-                                        <strong>说明：</strong> 本期销售额比上期增长了23%。
-                                    </small>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <h5>用户行为统计</h5>
-                                </div>
-                                <div class="ibox-content">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">访问页面 / 浏览量</small>
-                                            <h4>236 321.80</h4>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">% 新访客</small>
-                                            <h4>46.11%</h4>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">最后一周</small>
-                                            <h4>432.021</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">访问页面 / 浏览量</small>
-                                            <h4>643 321.10</h4>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">% 新访客</small>
-                                            <h4>92.43%</h4>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">最后一周</small>
-                                            <h4>564.554</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">访问页面 / 浏览量</small>
-                                            <h4>436 547.20</h4>
-                                        </div>
-
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">% 新访客</small>
-                                            <h4>150.23%</h4>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <small class="stats-label">最后一周</small>
-                                            <h4>124.990</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-lg-12">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-title">
-                                    <h5>自定义响应表格</h5>
-                                    <div class="ibox-tools">
-                                        <a class="collapse-link">
-                                            <i class="fa fa-chevron-up"></i>
-                                        </a>
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            <i class="fa fa-wrench"></i>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-user">
-                                            <li><a href="#">设置选项1</a>
-                                            </li>
-                                            <li><a href="#">设置选项2</a>
-                                            </li>
-                                        </ul>
-                                        <a class="close-link">
-                                            <i class="fa fa-times"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="ibox-content">
-                                    <div class="row">
-                                        <div class="col-sm-9 m-b-xs">
-                                            <div data-toggle="buttons" class="btn-group">
-                                                <label class="btn btn-sm btn-white">
-                                                    <input type="radio" id="option1" name="options">天</label>
-                                                <label class="btn btn-sm btn-white active">
-                                                    <input type="radio" id="option2" name="options">周</label>
-                                                <label class="btn btn-sm btn-white">
-                                                    <input type="radio" id="option3" name="options">月</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="input-group">
-                                                <input type="text" placeholder="搜索" class="input-sm form-control"> <span class="input-group-btn">
-                                        <button type="button" class="btn btn-sm btn-primary">搜索</button> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>项目</th>
-                                                    <th>进度</th>
-                                                    <th>任务</th>
-                                                    <th>日期</th>
-                                                    <th>操作</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>米莫说｜MiMO Show</td>
-                                                    <td><span class="pie">0.52/1.561</span>
-                                                    </td>
-                                                    <td>20%</td>
-                                                    <td>2014.11.11</td>
-                                                    <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>商家与购物用户的交互试衣应用</td>
-                                                    <td><span class="pie">6,9</span>
-                                                    </td>
-                                                    <td>40%</td>
-                                                    <td>2014.11.11</td>
-                                                    <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>天狼---智能硬件项目</td>
-                                                    <td><span class="pie">3,1</span>
-                                                    </td>
-                                                    <td>75%</td>
-                                                    <td>2014.11.11</td>
-                                                    <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>线下超市+线上商城+物流配送互联系统</td>
-                                                    <td><span class="pie">4,9</span>
-                                                    </td>
-                                                    <td>18%</td>
-                                                    <td>2014.11.11</td>
-                                                    <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                   <!-- 咨信查询-->       
+222
+                   <!-- 合作机构-->
+                   
+                   
                 </div>
 
             </div>
-            <div class="footer">
-                <div class="pull-right">
-                    By：<a href="http://www.zi-han.net" target="_blank">zihan's blog</a>
-                </div>
-                <div>
-                    <strong>Copyright</strong> H+ &copy; 2014
-                </div>
-            </div>
+
+<!-- 底部文件 -->
+<jsp:include page="/common/_footer.jsp"></jsp:include>
+            
         </div>
     </div>
 
-    <script src="hplus/js/jquery.min.js?v=2.1.4"></script>
-    <script src="hplus/js/bootstrap.min.js?v=3.3.5"></script>
-    <script src="hplus/js/content.min.js?v=1.0.0"></script>
-    <script src="hplus/js/plugins/flot/jquery.flot.js"></script>
-    <script src="hplus/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="hplus/js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="hplus/js/plugins/chartJs/Chart.min.js"></script>
-    <script src="hplus/js/plugins/peity/jquery.peity.min.js"></script>
-    <script src="hplus/js/demo/peity-demo.min.js"></script>
+    <jsp:include page="/common/_script.jsp"></jsp:include>
     <script>
         $(document).ready(function(){var d1=[[1262304000000,6],[1264982400000,3057],[1267401600000,20434],[1270080000000,31982],[1272672000000,26602],[1275350400000,27826],[1277942400000,24302],[1280620800000,24237],[1283299200000,21004],[1285891200000,12144],[1288569600000,10577],[1291161600000,10295]];var d2=[[1262304000000,5],[1264982400000,200],[1267401600000,1605],[1270080000000,6129],[1272672000000,11643],[1275350400000,19055],[1277942400000,30062],[1280620800000,39197],[1283299200000,37000],[1285891200000,27000],[1288569600000,21000],[1291161600000,17000]];var data1=[{label:"数据1",data:d1,color:"#17a084"},{label:"数据2",data:d2,color:"#127e68"}];$.plot($("#flot-chart1"),data1,{xaxis:{tickDecimals:0},series:{lines:{show:true,fill:true,fillColor:{colors:[{opacity:1},{opacity:1}]},},points:{width:0.1,show:false},},grid:{show:false,borderWidth:0},legend:{show:false,}});var lineData={labels:["一月","二月","三月","四月","五月","六月","七月"],datasets:[{label:"示例数据",fillColor:"rgba(220,220,220,0.5)",strokeColor:"rgba(220,220,220,1)",pointColor:"rgba(220,220,220,1)",pointStrokeColor:"#fff",pointHighlightFill:"#fff",pointHighlightStroke:"rgba(220,220,220,1)",data:[65,59,40,51,36,25,40]},{label:"示例数据",fillColor:"rgba(26,179,148,0.5)",strokeColor:"rgba(26,179,148,0.7)",pointColor:"rgba(26,179,148,1)",pointStrokeColor:"#fff",pointHighlightFill:"#fff",pointHighlightStroke:"rgba(26,179,148,1)",data:[48,48,60,39,56,37,30]}]};var lineOptions={scaleShowGridLines:true,scaleGridLineColor:"rgba(0,0,0,.05)",scaleGridLineWidth:1,bezierCurve:true,bezierCurveTension:0.4,pointDot:true,pointDotRadius:4,pointDotStrokeWidth:1,pointHitDetectionRadius:20,datasetStroke:true,datasetStrokeWidth:2,datasetFill:true,responsive:true,};var ctx=document.getElementById("lineChart").getContext("2d");var myNewChart=new Chart(ctx).Line(lineData,lineOptions)});
     </script>
