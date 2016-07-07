@@ -2,14 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Link Rel="icon" href="/hplus/img/kuaiyishou.ico" type=”image/x-icon”>
 
-    <title>H+ 后台主题UI框架 - 首页示例四</title>
+    <title>快易收-您的债权管理专家</title>
     <jsp:include page="/common/_meta.jsp"></jsp:include>
 
 </head>
@@ -18,366 +16,32 @@
 
     <div id="wrapper">
         <div id="page-wrapper" class="gray-bg">
-             <jsp:include page="/common/_menu.jsp"></jsp:include>
+            <jsp:include page="/common/_menu.jsp"></jsp:include>
             
             <div class="wrapper wrapper-content">
                 <div class="container">
-                <!-- 图片轮播 -->
-                 <div class="row">
-                 <div class="col-sm-12">
-                 
-                 </div>
-                 </div>
-                
-                    <!-- 优质债权和债权转让 -->
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="ibox float-e-margins">
-								<div class="ibox-title">
-									<h5>债权信息</h5>
-									<div class="ibox-tools">
-										<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
-										</a> <a class="close-link"> <i class="fa fa-times"></i>
-										</a>
-									</div>
-								</div>
-								<div class="ibox-content">
-									<table class="table table-hover no-margins">
-										<thead>
-											<tr>
-												<th>所在地</th>
-												<th>债务人</th>
-												<th>金额(万元)</th>
-												<th>佣金</th>
-												<th>操作</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><span class="label label-primary">河南</span></td>
-												<td>谭*晓</td>
-												<td><i class="fa fa-clock-o"></i> 1.40</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
-												<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-warning">湖南</span></td>
-												<td>徐子崴</td>
-												<td><i class="fa fa-clock-o"></i> 10.40</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
-												<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-warning">江苏</span></td>
-												<td>姜岚昕</td>
-												<td><i class="fa fa-clock-o"></i> 1.30</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>
-													54%-60%</td>
-													<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-warning">江苏</span></td>
-												<td>武汉大兵哥</td>
-												<td><i class="fa fa-clock-o"></i> 2.20</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>12%-25%</td>
-												<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-primary">湖北</span></td>
-												<td>荆莹儿</td>
-												<td><i class="fa fa-clock-o"></i> 9.40</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>
-													22%-30%</td>
-													<td>查看</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="ibox float-e-margins">
-								<div class="ibox-title">
-									<h5>债权转让</h5>
-									<div class="ibox-tools">
-										<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
-										</a> <a class="close-link"> <i class="fa fa-times"></i>
-										</a>
-									</div>
-								</div>
-								<div class="ibox-content">
-																		<table class="table table-hover no-margins">
-										<thead>
-											<tr>
-												<th>所在地</th>
-												<th>债务人</th>
-												<th>金额(万元)</th>
-												<th>佣金</th>
-												<th>操作</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><span class="label label-primary">河南</span></td>
-												<td>谭*晓</td>
-												<td><i class="fa fa-clock-o"></i> 1.40</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
-												<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-warning">湖南</span></td>
-												<td>徐子崴</td>
-												<td><i class="fa fa-clock-o"></i> 10.40</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
-												<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-warning">江苏</span></td>
-												<td>姜岚昕</td>
-												<td><i class="fa fa-clock-o"></i> 1.30</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>
-													54%-60%</td>
-													<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-warning">江苏</span></td>
-												<td>武汉大兵哥</td>
-												<td><i class="fa fa-clock-o"></i> 2.20</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>12%-25%</td>
-												<td>查看</td>
-											</tr>
-											<tr>
-												<td><span class="label label-primary">湖北</span></td>
-												<td>荆莹儿</td>
-												<td><i class="fa fa-clock-o"></i> 9.40</td>
-												<td class="text-navy"><i class="fa fa-level-up"></i>
-													22%-30%</td>
-													<td>查看</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-                     <!--  -->
+                   <!-- 图片轮播 -->
+                   <jsp:include page="index_ad.jsp"></jsp:include>
 
-
+                   <!-- 优质债权和债权转让 -->
+				   <jsp:include page="index_credit.jsp"></jsp:include>
+               
                    <!-- 客户资料信息 -->
-		       <div class="row">
-		            <div class="col-sm-12">
-		                <div class="tabs-container">
-		                    <ul class="nav nav-tabs">
-		                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 资深不良处置专家</a></li>
-		                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">资深诉讼律师</a></li>
-		                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">资深诉财经、法制媒体人</a></li>
-		                    </ul>
-		                    <div class="tab-content">
-		                        <div id="tab-1" class="tab-pane active">
-		                            <div class="panel-body">
-		                                <div class="row">
-												<div class="col-sm-4">
-													<div class="contact-box">
-														<a href="profile.html">
-															<div class="col-sm-4">
-																<div class="text-center">
-																	<img alt="image"
-																		class="img-circle m-t-xs img-responsive"
-																		src="hplus/img/a2.jpg">
-																	<div class="m-t-xs font-bold">CTO</div>
-																</div>
-															</div>
-															<div class="col-sm-8">
-																<h3>
-																	<strong>奔波儿灞</strong>
-																</h3>
-																<p>
-																	<i class="fa fa-map-marker"></i> 甘肃·兰州
-																</p>
-																<address>
-																	<strong>Baidu, Inc.</strong><br>
-																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
-																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
-																</address>
-															</div>
-															<div class="clearfix"></div>
-														</a>
-													</div>
-												</div>
-												<div class="col-sm-4">
-													<div class="contact-box">
-														<a href="profile.html">
-															<div class="col-sm-4">
-																<div class="text-center">
-																	<img alt="image"
-																		class="img-circle m-t-xs img-responsive"
-																		src="hplus/img/a1.jpg">
-																	<div class="m-t-xs font-bold">营销总监</div>
-																</div>
-															</div>
-															<div class="col-sm-8">
-																<h3>
-																	<strong>灞波儿奔</strong>
-																</h3>
-																<p>
-																	<i class="fa fa-map-marker"></i> 四川·成都
-																</p>
-																<address>
-																	<strong>Taobao, Inc.</strong><br>
-																	E-mail:xxx@taobao.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
-																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
-																</address>
-															</div>
-															<div class="clearfix"></div>
-														</a>
-													</div>
-												</div>
-												<div class="col-sm-4">
-													<div class="contact-box">
-														<a href="profile.html">
-															<div class="col-sm-4">
-																<div class="text-center">
-																	<img alt="image"
-																		class="img-circle m-t-xs img-responsive"
-																		src="hplus/img/a3.jpg">
-																	<div class="m-t-xs font-bold">Marketing manager</div>
-																</div>
-															</div>
-															<div class="col-sm-8">
-																<h3>
-																	<strong>Monica Smith</strong>
-																</h3>
-																<p>
-																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
-																</p>
-																<address>
-																	<strong>Baidu, Inc.</strong><br>
-																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
-																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
-																</address>
-															</div>
-															<div class="clearfix"></div>
-														</a>
-													</div>
-												</div>
-												<div class="col-sm-4">
-													<div class="contact-box">
-														<a href="profile.html">
-															<div class="col-sm-4">
-																<div class="text-center">
-																	<img alt="image"
-																		class="img-circle m-t-xs img-responsive"
-																		src="hplus/img/a4.jpg">
-																	<div class="m-t-xs font-bold">攻城师</div>
-																</div>
-															</div>
-															<div class="col-sm-8">
-																<h3>
-																	<strong>Michael Zimber</strong>
-																</h3>
-																<p>
-																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
-																</p>
-																<address>
-																	<strong>Baidu, Inc.</strong><br>
-																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
-																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
-																</address>
-															</div>
-															<div class="clearfix"></div>
-														</a>
-													</div>
-												</div>
-												<div class="col-sm-4">
-													<div class="contact-box">
-														<a href="profile.html">
-															<div class="col-sm-4">
-																<div class="text-center">
-																	<img alt="image"
-																		class="img-circle m-t-xs img-responsive"
-																		src="hplus/img/a5.jpg">
-																	<div class="m-t-xs font-bold">射鸡师</div>
-																</div>
-															</div>
-															<div class="col-sm-8">
-																<h3>
-																	<strong>作家崔成浩</strong>
-																</h3>
-																<p>
-																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
-																</p>
-																<address>
-																	<strong>Baidu, Inc.</strong><br>
-																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
-																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
-																</address>
-															</div>
-															<div class="clearfix"></div>
-														</a>
-													</div>
-												</div>
-												<div class="col-sm-4">
-													<div class="contact-box">
-														<a href="profile.html">
-															<div class="col-sm-4">
-																<div class="text-center">
-																	<img alt="image"
-																		class="img-circle m-t-xs img-responsive"
-																		src="hplus/img/a6.jpg">
-																	<div class="m-t-xs font-bold">射鸡师</div>
-																</div>
-															</div>
-															<div class="col-sm-8">
-																<h3>
-																	<strong>韩寒</strong>
-																</h3>
-																<p>
-																	<i class="fa fa-map-marker"></i> 上海市闵行区绿地科技岛广场A座2606室
-																</p>
-																<address>
-																	<strong>Baidu, Inc.</strong><br>
-																	E-mail:xxx@baidu.com<br> Weibo:<a href="">http://weibo.com/xxx</a><br>
-																	<abbr title="Phone">Tel:</abbr> (123) 456-7890
-																</address>
-															</div>
-															<div class="clearfix"></div>
-														</a>
-													</div>
-												</div>
-											</div>
-		                            </div>
-		                        </div>
-		                        <div id="tab-2" class="tab-pane">
-		                            <div class="panel-body">
-		                                <strong>移动设备优先</strong>
-		                                <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
-		                            </div>
-		                        </div>
-		                       <div id="tab-3" class="tab-pane">
-		                            <div class="panel-body">
-		                                <strong>移动互联网</strong>
-		                                <p>在 Bootstrap 3 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-			        </div>
+		           <jsp:include page="index_expert.jsp"></jsp:include>
                     
-                    <!-- 业务资讯-->                   
-
-
+                   <!-- 业务资讯-->                   
+                   <jsp:include page="index_blog.jsp"></jsp:include>
+3333
                    <!-- 咨信查询-->       
-222
+
                    <!-- 合作机构-->
-                   
-                   
+                   <jsp:include page="index_footer.jsp"></jsp:include>             
                 </div>
 
             </div>
 
-<!-- 底部文件 -->
-<jsp:include page="/common/_footer.jsp"></jsp:include>
+			<!-- 底部文件 -->
+			<jsp:include page="/common/_footer.jsp"></jsp:include>
             
         </div>
     </div>

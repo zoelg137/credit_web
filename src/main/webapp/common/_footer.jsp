@@ -1,5 +1,7 @@
 
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<!-- .subfooter start -->
 <div class="subfooter" style="background-color: #555555;">
 	<div class="container">
 		<div class="row" style="margin-top: 50px">
@@ -38,3 +40,4 @@
 		</div>
 	</div>
 </div>
+<!-- .subfooter end -->
