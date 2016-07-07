@@ -18,9 +18,9 @@
                             <li class="dropdown">
                                 <a aria-expanded="false" role="button" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"> 债权信息 <span class="caret"></span></a>
                                 <ul role="menu" class="dropdown-menu">
-                                    <li><a href="">债权处置</a>
+                                    <li><a href="credit/credit_disposal_list.jsp">债权处置</a>
                                     </li>
-                                    <li><a href="">债权转让</a>
+                                    <li><a href="credit/credit_transfer_list.jsp">债权转让</a>
                                     </li>
                                 </ul>
                             </li>
@@ -28,7 +28,7 @@
                                 <a aria-expanded="false" role="button" href="disposal.jsp"> 处置方式 </a>
                             </li>
                             <li >
-                                <a aria-expanded="false" role="button" href="index.html"> 线索悬赏 </a>
+                                <a aria-expanded="false" role="button" href="reward/reward_list.jsp"> 线索悬赏 </a>
                             </li>
                             <li >
                                 <a aria-expanded="false" role="button" href="index.html"> 专家顾问 </a>
