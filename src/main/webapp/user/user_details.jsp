@@ -37,38 +37,25 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="commentForm">
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">姓名：</label>
-                                <div class="col-sm-8">
-                                              张三
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">E-mail：</label>
-                                <div class="col-sm-8">
-                                    zhangsan@163.com
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">网站：</label>
-                                <div class="col-sm-8">
-                                    www.baidu.com
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">说明：</label>
-                                <div class="col-sm-8">
-                                      复旦大学法律硕士。曾在上海市公安局经济犯罪侦查总队工作十余年，历任主办侦查员
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-4 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
-                                </div>
-                            </div>
-                        </form>
-                                  
+                    
+                             <dl class="dl-horizontal">
+                                    <dt>姓名：</dt>
+                                    <dd>张三</dd>
+                              </dl>
+                  
+                              <dl class="dl-horizontal">
+                                    <dt>E-mail：</dt>
+                                    <dd> test@163.com</dd>
+                               </dl>
+                  
+                                <dl class="dl-horizontal">
+                                    <dt>所在省份：</dt>
+                                    <dd>湖南省</dd>
+                               </dl>
+								<dl class="dl-horizontal">
+									<dt>个人简介：</dt>
+									<dd>复旦大学法律硕士。曾在上海市公安局经济犯罪侦查总队工作十余年，历任主办侦查员</dd>
+								</dl>
                     </div>
                 </div>
             </div>

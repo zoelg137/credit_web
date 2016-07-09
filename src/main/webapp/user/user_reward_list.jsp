@@ -26,17 +26,25 @@
              <div class="col-sm-9">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>悬赏信息</h5>
+                        <h5>线索悬赏</h5>
                         <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
+                            <a href="projects.html" class="btn btn-primary btn-xs">发布悬赏</a>
                         </div>
                     </div>
                     <div class="ibox-content">
+                              <!-- 搜索表单 -->
+		                      <div class="row m-b-sm m-t-sm">
+		                            <div class="col-md-1">
+		                                <button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+		                            </div>
+		                            <div class="col-md-11">
+		                                <div class="input-group">
+		                                    <input type="text" placeholder="请输入项目名称" class="input-sm form-control"> <span class="input-group-btn">
+		                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+		                                </div>
+		                            </div>
+		                        </div>
+                               <!-- 数据列表 -->
 								<table class="table table-hover">
 									<thead>
 										<tr>
@@ -76,7 +84,8 @@
 									</tbody>
 								</table>
 
-
+							    <div class="hr-line-dashed"></div>
+			                    <jsp:include page="/common/_pagination.jsp"></jsp:include>
                     </div>
                 </div>
             </div>

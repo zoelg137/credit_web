@@ -5,7 +5,7 @@
             <div class="col-sm-9">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>JSON示例</h5>
+                        <h5>用户债权统计信息</h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -17,7 +17,20 @@
                     </div>
                     <div class="ibox-content">
 
-                        用户 
+                              <dl class="dl-horizontal">
+                                    <dt>债权处置统计：</dt>
+                                    <dd>共100 条</dd>
+                              </dl>
+                  
+                              <dl class="dl-horizontal">
+                                    <dt>债权转让统计：</dt>
+                                    <dd>共1 条</dd>
+                               </dl>
+                  
+                                <dl class="dl-horizontal">
+                                    <dt>线索悬赏统计：</dt>
+                                    <dd>共5 条</dd>
+                               </dl>
 
                     </div>
                 </div>

@@ -18,4 +18,7 @@ pageContext.setAttribute("basePath",basePath);
 <script src="${basePath }hplus/js/demo/peity-demo.min.js"></script>
 <script src="${basePath }hplus/js/plugins/iCheck/icheck.min.js"></script>
 <script src="${basePath }hplus/js/plugins/jsTree/jstree.min.js"></script>
+<script src="${basePath }hplus/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="${basePath }hplus/js/plugins/validate/messages_zh.min.js"></script>
+<script src="${basePath }hplus/js/demo/form-validate-demo.min.js"></script>
 
