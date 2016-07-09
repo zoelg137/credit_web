@@ -8,7 +8,7 @@
                         <h2>业务资讯</h2>
                         <div class="hr-line-dashed"></div>
                         <div class="search-result">
-                            <h3><a href="search_results.html#">定制后台的主题目录(Theme)</a></h3>
+                            <h3><a href="/blog/blog_details.jsp">定制后台的主题目录(Theme)</a></h3>
                             <a href="search_results.html#" class="search-link">koda.iteye.com/blog/10...</a>
                             <p>
                                 不像前台Theme目录的改变可以通过后台界面配置,后台的主题目录要自己修改相应的配置文件。 Theme目录的配置再Adminhtml模块,打开后台的配置文件 $MAGENO_DIR\app\code...
@@ -55,8 +55,22 @@
                             </p>
                         </div>
                         <div class="hr-line-dashed"></div>
-                        <jsp:include page="/common/_pagination.jsp"></jsp:include>
-                     </div>
+                        <div class="text-center">
+                            <div class="btn-group">
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button class="btn btn-white">1</button>
+                                <button class="btn btn-white  active">2</button>
+                                <button class="btn btn-white">3</button>
+                                <button class="btn btn-white">4</button>
+                                <button class="btn btn-white">5</button>
+                                <button class="btn btn-white">6</button>
+                                <button class="btn btn-white">7</button>
+                                <button class="btn btn-white" type="button"><i class="fa fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
