@@ -17,3 +17,5 @@ pageContext.setAttribute("basePath",basePath);
 <script src="${basePath }hplus/js/plugins/peity/jquery.peity.min.js"></script>
 <script src="${basePath }hplus/js/demo/peity-demo.min.js"></script>
 <script src="${basePath }hplus/js/plugins/iCheck/icheck.min.js"></script>
+<script src="${basePath }hplus/js/plugins/jsTree/jstree.min.js"></script>
+

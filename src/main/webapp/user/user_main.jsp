@@ -20,22 +20,7 @@
             
             <div class="wrapper wrapper-content">
                 <div class="container">
-                   <!-- 图片轮播 -->
-                   <jsp:include page="index_ad.jsp"></jsp:include>
-
-                   <!-- 优质债权和债权转让 -->
-				   <jsp:include page="index_credit.jsp"></jsp:include>
-               
-                   <!-- 客户资料信息 -->
-		           <jsp:include page="index_expert.jsp"></jsp:include>
-                    
-                   <!-- 业务资讯-->                   
-                   <jsp:include page="index_blog.jsp"></jsp:include>
-
-                   <!-- 咨信查询-->       
-                   <jsp:include page="index_zx.jsp"></jsp:include>
-                   <!-- 合作机构-->
-                   <jsp:include page="index_footer.jsp"></jsp:include>             
+                    <jsp:include page="/user/user_index.jsp"></jsp:include>
                 </div>
 
             </div>

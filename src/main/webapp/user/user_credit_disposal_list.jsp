@@ -20,22 +20,80 @@
             
             <div class="wrapper wrapper-content">
                 <div class="container">
-                   <!-- 图片轮播 -->
-                   <jsp:include page="index_ad.jsp"></jsp:include>
+                     <div class="row">
+           <jsp:include page="/user/user_left.jsp"></jsp:include>
+            <div class="col-sm-9">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>债权信息</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
 
-                   <!-- 优质债权和债权转让 -->
-				   <jsp:include page="index_credit.jsp"></jsp:include>
-               
-                   <!-- 客户资料信息 -->
-		           <jsp:include page="index_expert.jsp"></jsp:include>
-                    
-                   <!-- 业务资讯-->                   
-                   <jsp:include page="index_blog.jsp"></jsp:include>
+                       <table class="table table-hover no-margins">
+					<thead>
+						<tr>
+							<th>所在地</th>
+							<th>债务人</th>
+							<th>金额(万元)</th>
+							<th>佣金</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="label label-primary">河南</span></td>
+							<td>谭*晓</td>
+							<td><i class="fa fa-clock-o"></i> 1.40</td>
+							<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td><span class="label label-warning">湖南</span></td>
+							<td>徐子崴</td>
+							<td><i class="fa fa-clock-o"></i> 10.40</td>
+							<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td><span class="label label-warning">江苏</span></td>
+							<td>姜岚昕</td>
+							<td><i class="fa fa-clock-o"></i> 1.30</td>
+							<td class="text-navy"><i class="fa fa-level-up"></i> 54%-60%</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td><span class="label label-warning">江苏</span></td>
+							<td>武汉大兵哥</td>
+							<td><i class="fa fa-clock-o"></i> 2.20</td>
+							<td class="text-navy"><i class="fa fa-level-up"></i>12%-25%</td>
+							<td>查看</td>
+						</tr>
+						<tr>
+							<td><span class="label label-primary">湖北</span></td>
+							<td>荆莹儿</td>
+							<td><i class="fa fa-clock-o"></i> 9.40</td>
+							<td class="text-navy"><i class="fa fa-level-up"></i> 22%-30%</td>
+							<td>查看</td>
+						</tr>
+					</tbody>
+				</table>
 
-                   <!-- 咨信查询-->       
-                   <jsp:include page="index_zx.jsp"></jsp:include>
-                   <!-- 合作机构-->
-                   <jsp:include page="index_footer.jsp"></jsp:include>             
+                    </div>
+                </div>
+            </div>
+        </div>
+                 
+                 
+                 
+                 
                 </div>
 
             </div>

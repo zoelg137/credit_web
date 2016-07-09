@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*, com.gvtv.manage.base.util.Const" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <div class="row">
 	<div class="col-sm-12">

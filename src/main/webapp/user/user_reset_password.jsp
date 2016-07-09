@@ -20,22 +20,58 @@
             
             <div class="wrapper wrapper-content">
                 <div class="container">
-                   <!-- 图片轮播 -->
-                   <jsp:include page="index_ad.jsp"></jsp:include>
-
-                   <!-- 优质债权和债权转让 -->
-				   <jsp:include page="index_credit.jsp"></jsp:include>
-               
-                   <!-- 客户资料信息 -->
-		           <jsp:include page="index_expert.jsp"></jsp:include>
-                    
-                   <!-- 业务资讯-->                   
-                   <jsp:include page="index_blog.jsp"></jsp:include>
-
-                   <!-- 咨信查询-->       
-                   <jsp:include page="index_zx.jsp"></jsp:include>
-                   <!-- 合作机构-->
-                   <jsp:include page="index_footer.jsp"></jsp:include>             
+                     <div class="row">
+              <!-- 左边菜单 -->       
+            <jsp:include page="/user/user_left.jsp"></jsp:include>
+             <!-- 右边主内容 -->
+             <div class="col-sm-9">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>重置用户密码</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                    <form class="form-horizontal m-t" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">姓名：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="name" minlength="2" type="text" class="form-control" required="" aria-required="true" value="liaoxj@l63.com" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">旧密码：</label>
+                                <div class="col-sm-8">
+                                    <input id="cemail" type="email" class="form-control" name="email" required="" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">新密码：</label>
+                                <div class="col-sm-8">
+                                    <input id="curl" type="url" class="form-control" name="url">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                                  
+                    </div>
+                </div>
+            </div>
+        </div>
+                 
+                 
+                 
+                 
                 </div>
 
             </div>

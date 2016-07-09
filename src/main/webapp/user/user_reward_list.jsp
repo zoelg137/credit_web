@@ -20,22 +20,72 @@
             
             <div class="wrapper wrapper-content">
                 <div class="container">
-                   <!-- 图片轮播 -->
-                   <jsp:include page="index_ad.jsp"></jsp:include>
+                     <div class="row">
+              <!-- 左边菜单 -->       
+            <jsp:include page="/user/user_left.jsp"></jsp:include>
+             <!-- 右边主内容 -->
+             <div class="col-sm-9">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>悬赏信息</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>类型</th>
+											<th>发布时间</th>
+											<th>所在地</th>
+											<th>悬赏金额</th>
+											<th>状态</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="label label-warning">找人</span></td>
+											<td>2016-07-08 11:22:33</td>
+											<td>湛*市雄立房产有限公司</td>
+											<td>1.00金额(万元)</td>
+											<td><span class="label label-warning">悬赏中</span></td>
+											<td><a href="">查看</a></td>
+										</tr>
+										<tr>
+											<td><span class="label label-warning">找车</span></td>
+											<td>2016-07-08 11:22:33</td>
+											<td>张三</td>
+											<td>5.00金额(万元)</td>
+											<td><span class="label label-warning">招标中</span></td>
+											<td><a href="">查看</a></td>
+										</tr>
+										<tr>
+											<td><span class="label label-warning">找房产</span></td>
+											<td>2016-07-08 11:22:33</td>
+											<td>湛*市</td>
+											<td>11.00金额(万元)</td>
+											<td><span class="label label-warning">招标中</span></td>
+											<td><a href="">查看</a></td>
+										</tr>
+									</tbody>
+								</table>
 
-                   <!-- 优质债权和债权转让 -->
-				   <jsp:include page="index_credit.jsp"></jsp:include>
-               
-                   <!-- 客户资料信息 -->
-		           <jsp:include page="index_expert.jsp"></jsp:include>
-                    
-                   <!-- 业务资讯-->                   
-                   <jsp:include page="index_blog.jsp"></jsp:include>
 
-                   <!-- 咨信查询-->       
-                   <jsp:include page="index_zx.jsp"></jsp:include>
-                   <!-- 合作机构-->
-                   <jsp:include page="index_footer.jsp"></jsp:include>             
+                    </div>
+                </div>
+            </div>
+        </div>
+                 
+                 
+                 
+                 
                 </div>
 
             </div>
