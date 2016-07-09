@@ -20,13 +20,13 @@ pageContext.setAttribute("basePath",basePath);
 			</div>
 			<div class="col-md-2" style="color: #fff;">
 				<ul class="">
-					<li><a target="_blank" href="ft?method=106#about_us"
+					<li><a target="_blank" href="${basePath }help/help.jsp#about_us"
 						style="color: #fff">关于我们</a></li>
-					<li><a target="_blank" href="ft?method=106#service_us"
+					<li><a target="_blank" href="${basePath }help/help.jsp#service_us"
 						style="color: #fff">服务协议</a></li>
-					<li><a target="_blank" href="ft?method=106#job"
+					<li><a target="_blank" href="${basePath }help/help.jsp#job"
 						style="color: #fff">人才招聘</a></li>
-					<li><a target="_blank" href="ft?method=106#idea"
+					<li><a target="_blank" href="${basePath }help/help.jsp#idea"
 						style="color: #fff">意见反馈</a></li>
 				</ul>
 

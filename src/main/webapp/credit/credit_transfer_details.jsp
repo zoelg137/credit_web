@@ -5,8 +5,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link Rel="icon" href="/hplus/img/kuaiyishou.ico" type=”image/x-icon”>
-
     <title>快易收-您的债权管理专家</title>
     <jsp:include page="/common/_meta.jsp"></jsp:include>
 

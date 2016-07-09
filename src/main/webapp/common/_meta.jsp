@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 // 将 "项目路径basePath" 放入pageContext中，待以后用EL表达式读出。
 pageContext.setAttribute("basePath",basePath);
 %>
- <link rel="shortcut icon" href="hplus/kuaiyishou.ico">
+ <link rel="shortcut icon" href="${basePath }hplus/kuaiyishou.ico">
  <link href="${basePath }hplus/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
  <link href="${basePath }hplus/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
  <link href="${basePath }hplus/css/animate.min.css" rel="stylesheet">

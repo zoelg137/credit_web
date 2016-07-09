@@ -1,5 +1,12 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+String path = request.getContextPath();
+// 获得本项目的地址(例如: http://localhost:8080/MyApp/)赋值给basePath变量
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+// 将 "项目路径basePath" 放入pageContext中，待以后用EL表达式读出。
+pageContext.setAttribute("basePath",basePath);
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +66,7 @@
 											<td>160.00金额(万元)</td>
 											<td class="text-navy"><i class="fa fa-level-up"></i>20%-40%</td>
 											<td><span class="label label-warning">处置中</span></td>
-											<td><a href="/credit/credit_transfer_details.jsp">查看</a></td>
+											<td><a href="${basePath }credit/credit_transfer_details.jsp">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">个人债权</span></td>
@@ -68,7 +75,7 @@
 											<td>15.00金额(万元)</td>
 											<td class="text-navy"><i class="fa fa-level-up"></i>10%-15%</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="/credit/credit_transfer_details.jsp">查看</a></td>
+											<td><a href="${basePath }credit/credit_transfer_details.jsp">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">企业债权</span></td>
@@ -77,7 +84,7 @@
 											<td>161.00金额(万元)</td>
 											<td class="text-navy"><i class="fa fa-level-up"></i>21%-40%</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="/credit/credit_transfer_details.jsp">查看</a></td>
+											<td><a href="${basePath }credit/credit_transfer_details.jsp">查看</a></td>
 										</tr>
 									</tbody>
 								</table>

@@ -43,12 +43,19 @@
                     <div class="ibox-content">
                         <div class="row">
                             <div class="col-sm-6 b-r">
-                                <h3 class="m-t-none m-b">注册</h3>
-                                <p>欢迎注册本站会员</p>
+                                <p>欢迎您注册快易收债权管理系统会员</p>
                                 <form role="form">
+                                   <div class="form-group">
+                                        <label>会员类型</label> 
+                                        <select
+													id="shenfensel" name="shenfen" class="form-control">
+													<option value="0">债权方</option>
+													<option value="1">处置方</option>
+										</select>
+									</div>
                                     <div class="form-group">
                                         <label>用户名</label>
-                                        <input type="email" placeholder="请输入您注册的E-mail" class="form-control" required="">
+                                        <input type="text" placeholder="请输入您用户名" class="form-control" required="">
                                     </div>
                                     <div class="form-group">
                                         <label>密码</label>
@@ -58,6 +65,15 @@
 					                    <label>确认密码</label>
 					                    <input type="password" class="form-control" placeholder="请再次输入密码" required=""/>
 					                </div>
+					                <div class="form-group">
+					                    <label>手机</label>
+					                    <input type="phone" class="form-control" placeholder="请输入手机" required=""/>
+					                </div>					             
+					                <div class="form-group">
+					                    <label>Email</label>
+					                    <input type="email" class="form-control" placeholder="请输入Email" required=""/>
+					                </div>
+					                
                                     <div>
                                         <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>注册</strong>
                                         </button>

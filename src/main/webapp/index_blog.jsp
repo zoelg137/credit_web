@@ -54,9 +54,9 @@
                                 2014年4月29日 - 倡萌之前推荐过 WordPress后台主题插件:WP Admin Theme lime ,今天在推荐两款 MP6 和 Bootstrap Admin。 MP6 MP6 是WordPress核心团队开发的Word...
                             </p>
                         </div>
-                        <div class="hr-line-dashed"></div>
-                        <jsp:include page="/common/_pagination.jsp"></jsp:include>
                      </div>
                 </div>
             </div>
         </div>
+        
+        <b/>
