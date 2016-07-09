@@ -57,7 +57,7 @@
 											<td>湛*市雄立房产有限公司</td>
 											<td>1.00金额(万元)</td>
 											<td><span class="label label-warning">悬赏中</span></td>
-											<td><a href="">查看</a></td>
+											<td><a href="reward/reward_details.jsp">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">找车</span></td>
@@ -65,7 +65,7 @@
 											<td>张三</td>
 											<td>5.00金额(万元)</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="">查看</a></td>
+											<td><a href="reward/reward_details.jsp">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">找房产</span></td>
@@ -73,7 +73,7 @@
 											<td>湛*市</td>
 											<td>11.00金额(万元)</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="">查看</a></td>
+											<td><a href="reward/reward_details.jsp">查看</a></td>
 										</tr>
 									</tbody>
 								</table>

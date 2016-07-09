@@ -35,8 +35,7 @@ pageContext.setAttribute("basePath",basePath);
 						处置方式 </a></li>
 				<li><a aria-expanded="false" role="button"
 					href="${basePath }reward/reward_list.jsp"> 线索悬赏 </a></li>
-				<li><a aria-expanded="false" role="button" href="index.html">
-						专家顾问 </a></li>
+				<li><a aria-expanded="false" role="button" href="index.html">业务资讯 </a></li>
 			</ul>
 		</div>
 	</nav>
