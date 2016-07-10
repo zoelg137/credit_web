@@ -86,12 +86,14 @@
 	
 	<!-- ================ Shiro start ================ -->
 		<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		   <!-- 
 			<property name="realm" ref="ShiroRealm" />
+			 -->
 		</bean>
 		
-		<!--Realm -->
+		<!--Realm 
 		<bean id="ShiroRealm" class="com.gvtv.manage.base.interceptor.shiro.ShiroRealm" ></bean>
-	
+         -->
 		<!-- rights -->
 		<bean id="gvrts" class="com.gvtv.manage.base.filter.shiro.RightsFilter"></bean>
 	

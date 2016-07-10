@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMapper">
+	<sql id="userColumns">user_email,user_phone,user_type,nickname,user_level,user_role,user_head_images,description,user_status</sql>
+
+	
+	<resultMap type="User" id="userResultMap">
+		<id column="id" property="id"/>
+		<result column="user_email" property="userEmail"/>
+		<result column="user_phone" property="userPhone"/>
+		<result column="user_type" property="userType"/>
+		<result column="nickname" property="nickname"/>
+		<result column="user_pwd" property="userPwd"/>
+		<result column="user_level" property="userLevel"/>
+		<result column="user_role" property="userRole"/>
+		<result column="user_head_images" property="userHeadImages"/>
+		<result column="description" property="description"/>
+		<result column="user_status" property="userStatus"/>
+	</resultMap>
+		
+	<!-- 判断用户名和密码 -->
+	<select id="getUserInfo" parameterType="PageData" resultType="PageData" useCache="false">
+	   select 
+	   <include refid="userColumns"></include>
+		from cr_user 
+		where 1=1
+		<if test="loginName != null and password != null">
+	  	and	(
+	  		(user_phone = #{loginName} and password = #{password})
+	  		or
+	  		(email = #{loginName} and password = #{password})
+	  		) and user_status != -1
+		</if>
+		<if test="userId != null">
+		and user_id = #{userId}
+		</if>
+	</select>
+	
+	<update id="updateLastLogin" parameterType="User">
+		update sys_user set 
+		last_login=#{lastLogin} 
+		where user_id=#{userId}
+	</update>
+	
+	<select id="count" parameterType="PageData" resultType="int">
+		select count(1)
+		from sys_user u
+		where u.status != -1
+		<if test="keyword != null and keyword != ''">
+	  	and	CONCAT(IFNULL(u.login_name,''),IFNULL(u.name,'')) like #{keyword}
+		</if>
+	</select>
+	
+	<select id="list" parameterType="PageData" resultType="PageData">
+		select  u.user_id userId,
+				u.login_name loginName,
+				u.password,
+				u.name,
+				u.last_login lastLogin,
+				u.ip,
+				u.status,
+				u.description,
+				u.email,
+				u.phone,
+				u.skin
+		from sys_user u
+		where u.status != -1
+		<if test="keyword != null and keyword != ''">
+	  	and	CONCAT(IFNULL(u.login_name,''),IFNULL(u.name,'')) like #{keyword}
+		</if>
+		limit #{from},#{size}
+	</select>
+	
+	<insert id="add" parameterType="PageData">
+		insert into sys_user (
+			login_name,
+			password,
+			name,
+			status,
+			description,
+			email,
+			phone
+		) values (
+			#{loginName},
+			#{password},
+			#{name},
+			#{status},
+			#{description},
+			#{email},
+			#{phone}
+		)
+	</insert>
+	
+	
+	<select id="getByName" parameterType="String" resultType="PageData">
+		select 
+		  	user_id
+		from 
+			sys_user
+		where status != -1
+		and	login_name = #{login_name}
+	</select>
+	
+	<update id="edit" parameterType="PageData">
+		update sys_user set
+		<if test="password != null">
+			password = #{password},
+		</if>
+			name		= #{name},
+			description	= #{description},
+			email		= #{email},
+			phone		= #{phone}
+		where
+			user_id		= #{userId}
+	</update>
+	
+	<update id="updatePassword" parameterType="PageData">
+		update sys_user set
+			password	= #{newEncodePwd}
+		where
+			user_id		= #{userId}
+	</update>
+	
+	<update id="delete" parameterType="Integer">
+		update sys_user set
+			status	= -1
+		where
+			user_id	= #{userId}
+	</update>
+	
+	<update id="batchDelete" parameterType="java.util.List">
+		update sys_user set
+			status	= -1
+		where
+		
+			user_id	in
+		<foreach collection="list" item="id" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</update>
+	
+	<select id="listUserRoleByUserId" parameterType="Integer" resultType="PageData">
+		select
+			id,
+			user_id userId,
+			role_id roleId
+		from sys_user_role
+		where user_id = #{userId}
+	</select>
+	
+	<delete id="deleteUserRoleByUserId" parameterType="Integer">
+		delete from sys_user_role where user_id = #{userId}
+	</delete>
+	
+	<insert id="saveUserRoles" parameterType="java.util.List">
+		insert into sys_user_role (
+			user_id,
+			role_id
+		) values
+		<foreach collection="list" item="item" index="index" separator="," >
+	        (#{item.userId},#{item.roleId})
+	    </foreach>
+	</insert>
+</mapper>

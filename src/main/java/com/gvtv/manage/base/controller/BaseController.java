@@ -30,7 +30,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.gvtv.manage.base.system.entity.User;
+import com.credit.web.entity.User;
 import com.gvtv.manage.base.util.PageData;
 
 /**

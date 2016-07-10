@@ -11,11 +11,7 @@
     </settings>
 
 	<typeAliases>
-		<typeAlias type="com.gvtv.manage.base.system.entity.User" alias="User"/>
-		<typeAlias type="com.gvtv.manage.base.system.entity.Role" alias="Role"/>
-		<typeAlias type="com.gvtv.manage.base.system.entity.Menu" alias="Menu"/>
-		<typeAlias type="com.gvtv.manage.base.system.entity.Button" alias="Button"/>
-		
+		<typeAlias type="com.credit.web.entity.User" alias="User"/>
 		<typeAlias type="com.gvtv.manage.base.util.PageData" alias="PageData"/>
 		<!-- 分页 -->
 		<typeAlias type="com.gvtv.manage.base.entity.Page" alias="Page"/>
