@@ -10,7 +10,7 @@
 
     <task:annotation-driven/> 
 	<context:component-scan base-package="com.gvtv.manage.base" />
-	<context:component-scan base-package="com.gvtv.manage.projectname" />
+	<context:component-scan base-package="com.credit.web" />
 
 <!-- 	<mvc:annotation-driven /> -->
 	<mvc:default-servlet-handler />
@@ -24,7 +24,7 @@
 	<!-- 配置SpringMVC的视图解析器 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="prefix" value="/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
