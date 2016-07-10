@@ -1,5 +1,12 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+String path = request.getContextPath();
+// 获得本项目的地址(例如: http://localhost:8080/MyApp/)赋值给basePath变量
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+// 将 "项目路径basePath" 放入pageContext中，待以后用EL表达式读出。
+pageContext.setAttribute("basePath",basePath);
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +35,7 @@
                     <div class="ibox-title">
                         <h5>债权转让</h5>
                         <div class="ibox-tools">
-                            <a href="projects.html" class="btn btn-primary btn-xs">发布项目</a>
+                            <a href="${basePath }user/user_credit_transfer_add.jsp" class="btn btn-primary btn-xs" target="_self">发布项目</a>
                         </div>
                     </div>
                     <div class="ibox-content">
@@ -62,21 +69,21 @@
 							<td>谭*晓</td>
 							<td><i class="fa fa-clock-o"></i> 1.40</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
-							<td>查看</td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-warning">湖南</span></td>
 							<td>徐子崴</td>
 							<td><i class="fa fa-clock-o"></i> 10.40</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
-							<td>查看</td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-warning">江苏</span></td>
 							<td>姜岚昕</td>
 							<td><i class="fa fa-clock-o"></i> 1.30</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i> 54%-60%</td>
-							<td>查看</td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-warning">江苏</span></td>
@@ -90,7 +97,7 @@
 							<td>荆莹儿</td>
 							<td><i class="fa fa-clock-o"></i> 9.40</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i> 22%-30%</td>
-							<td>查看</td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
 						</tr>
 					</tbody>
 				</table>

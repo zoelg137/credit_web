@@ -47,8 +47,7 @@
                                 <form role="form">
                                    <div class="form-group">
                                         <label>会员类型</label> 
-                                        <select
-													id="shenfensel" name="shenfen" class="form-control">
+                                        <select id="shenfensel" name="shenfen" class="form-control">
 													<option value="0">债权方</option>
 													<option value="1">处置方</option>
 										</select>

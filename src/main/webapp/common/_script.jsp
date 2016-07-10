@@ -21,4 +21,4 @@ pageContext.setAttribute("basePath",basePath);
 <script src="${basePath }hplus/js/plugins/validate/jquery.validate.min.js"></script>
 <script src="${basePath }hplus/js/plugins/validate/messages_zh.min.js"></script>
 <script src="${basePath }hplus/js/demo/form-validate-demo.min.js"></script>
-
+<script src="${basePath }hplus/js/plugins/datapicker/bootstrap-datepicker.js"></script>

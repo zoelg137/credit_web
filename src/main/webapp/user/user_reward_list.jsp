@@ -1,5 +1,12 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%
+String path = request.getContextPath();
+// 获得本项目的地址(例如: http://localhost:8080/MyApp/)赋值给basePath变量
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+// 将 "项目路径basePath" 放入pageContext中，待以后用EL表达式读出。
+pageContext.setAttribute("basePath",basePath);
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +35,7 @@
                     <div class="ibox-title">
                         <h5>线索悬赏</h5>
                         <div class="ibox-tools">
-                            <a href="projects.html" class="btn btn-primary btn-xs">发布悬赏</a>
+                            <a href="${basePath }user/user_reward_add.jsp" class="btn btn-primary btn-xs">发布悬赏</a>
                         </div>
                     </div>
                     <div class="ibox-content">
@@ -63,7 +70,7 @@
 											<td>湛*市雄立房产有限公司</td>
 											<td>1.00金额(万元)</td>
 											<td><span class="label label-warning">悬赏中</span></td>
-											<td><a href="">查看</a></td>
+											<td><a href="${basePath }user/user_reward_details.jsp">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">找车</span></td>
@@ -71,7 +78,7 @@
 											<td>张三</td>
 											<td>5.00金额(万元)</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="">查看</a></td>
+											<td><a href="${basePath }user/user_reward_details.jsp">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">找房产</span></td>
@@ -79,7 +86,7 @@
 											<td>湛*市</td>
 											<td>11.00金额(万元)</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="">查看</a></td>
+											<td><a href="${basePath }user/user_reward_details.jsp">查看</a></td>
 										</tr>
 									</tbody>
 								</table>
