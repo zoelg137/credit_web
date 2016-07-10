@@ -16,25 +16,123 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`credit_web` /*!40100 DEFAULT CHARACTER 
 
 USE `credit_web`;
 
-/*Table structure for table `server_info` */
+/*Table structure for table `cr_blog` */
 
-DROP TABLE IF EXISTS `server_info`;
+DROP TABLE IF EXISTS `cr_blog`;
 
-CREATE TABLE `server_info` (
-  `server_id` int(11) NOT NULL AUTO_INCREMENT,
-  `ip` varchar(15) NOT NULL DEFAULT '' COMMENT 'ip',
-  `account` varchar(32) NOT NULL DEFAULT '' COMMENT 'login account',
-  `password` varchar(32) NOT NULL DEFAULT '' COMMENT 'password',
-  `remark` varchar(255) DEFAULT NULL COMMENT 'desc',
-  `created_by` varchar(32) DEFAULT NULL COMMENT '创建人',
-  `created_date` timestamp NULL DEFAULT NULL COMMENT '创建时间',
-  `num` int(11) DEFAULT NULL COMMENT '编号',
-  PRIMARY KEY (`server_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+CREATE TABLE `cr_blog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `blog_type` smallint(3) DEFAULT NULL COMMENT '业务文章分类',
+  `blog_title` varchar(256) DEFAULT NULL COMMENT '业务文章标题',
+  `blog_context` text COMMENT '业务文章内容',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*Data for the table `server_info` */
+/*Data for the table `cr_blog` */
 
-insert  into `server_info`(`server_id`,`ip`,`account`,`password`,`remark`,`created_by`,`created_date`,`num`) values (15,'ttt','tt','tt','tt',NULL,NULL,NULL),(16,'tr','fsda','fsda','fdsa',NULL,NULL,NULL);
+/*Table structure for table `cr_credit` */
+
+DROP TABLE IF EXISTS `cr_credit`;
+
+CREATE TABLE `cr_credit` (
+  `id` int(11) NOT NULL COMMENT '序号',
+  `user_id` int(11) DEFAULT NULL COMMENT '债权发布人id',
+  `cr_type` smallint(3) DEFAULT NULL COMMENT '债权类型',
+  `cr_amount` double DEFAULT NULL COMMENT '债权金额',
+  `cr_status` smallint(3) DEFAULT NULL COMMENT '债权转让',
+  `disposal_type` smallint(3) DEFAULT NULL COMMENT '处置方式',
+  `commision_range` varchar(32) DEFAULT NULL COMMENT '佣金范围',
+  `contact_name` varchar(32) DEFAULT NULL COMMENT '联系人',
+  `contact_number` varchar(32) DEFAULT NULL COMMENT '联系电话',
+  `debt_name` varchar(64) DEFAULT NULL COMMENT '债权方名称',
+  `debt_province` varchar(32) DEFAULT NULL COMMENT '债权方省份',
+  `debt_city` varchar(32) DEFAULT NULL COMMENT '债权方城市',
+  `debt_phone` varchar(32) DEFAULT NULL COMMENT '债权方电话',
+  `debt_proof` varchar(64) DEFAULT NULL COMMENT '债权方凭证',
+  `description` varchar(256) DEFAULT NULL COMMENT '债权方描述',
+  `create_date` datetime DEFAULT NULL COMMENT '创建日期',
+  `end_date` datetime DEFAULT NULL COMMENT '结束日期',
+  `open_date` datetime DEFAULT NULL COMMENT '开启日期',
+  `agreed_date` datetime DEFAULT NULL COMMENT '约定日期',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `cr_credit` */
+
+/*Table structure for table `cr_feedback` */
+
+DROP TABLE IF EXISTS `cr_feedback`;
+
+CREATE TABLE `cr_feedback` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `user_name` varchar(64) DEFAULT NULL COMMENT '反馈者姓名',
+  `phone` varchar(32) DEFAULT NULL COMMENT '反馈者电话',
+  `user_email` varchar(32) DEFAULT NULL COMMENT '反馈者邮件',
+  `context` text COMMENT '反馈内容',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `cr_feedback` */
+
+/*Table structure for table `cr_file_manager` */
+
+DROP TABLE IF EXISTS `cr_file_manager`;
+
+CREATE TABLE `cr_file_manager` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `file_type` smallint(3) DEFAULT NULL COMMENT '文件类型',
+  `file_title` varchar(32) DEFAULT NULL COMMENT '文件名称',
+  `dowload_url` varchar(128) DEFAULT NULL COMMENT '文件下载路径',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `cr_file_manager` */
+
+/*Table structure for table `cr_reward` */
+
+DROP TABLE IF EXISTS `cr_reward`;
+
+CREATE TABLE `cr_reward` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `reward_type` smallint(3) DEFAULT NULL COMMENT '悬赏类型',
+  `reward_amount` double DEFAULT NULL COMMENT '悬赏金额',
+  `reward_name` varchar(64) DEFAULT NULL COMMENT '悬赏人',
+  `cart_id` varchar(64) DEFAULT NULL COMMENT '身份证',
+  `car_brand` varchar(32) DEFAULT NULL COMMENT '车牌',
+  `province` varchar(32) DEFAULT NULL COMMENT '省份',
+  `city` varchar(32) DEFAULT NULL COMMENT '城市',
+  `images` varchar(64) DEFAULT NULL COMMENT '照片',
+  `create_time` datetime DEFAULT NULL COMMENT '创建日期',
+  `end_time` datetime DEFAULT NULL COMMENT '悬赏有效日期',
+  `description` varchar(256) DEFAULT NULL COMMENT '悬赏描述',
+  `reward_status` smallint(3) DEFAULT NULL COMMENT '悬赏状态',
+  `user_id` int(11) DEFAULT NULL COMMENT '登录用户编号',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `cr_reward` */
+
+/*Table structure for table `cr_user` */
+
+DROP TABLE IF EXISTS `cr_user`;
+
+CREATE TABLE `cr_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '序号',
+  `user_email` varchar(32) DEFAULT NULL COMMENT '用户邮箱',
+  `user_phone` varchar(32) DEFAULT NULL COMMENT '用户手机',
+  `user_type` smallint(3) DEFAULT NULL COMMENT '会员类型（）',
+  `nickname` varchar(32) DEFAULT NULL COMMENT '用户昵称',
+  `user_pwd` varchar(32) DEFAULT NULL COMMENT '用户密码',
+  `user_level` smallint(3) DEFAULT NULL COMMENT '用户等级',
+  `user_role` varchar(32) DEFAULT NULL COMMENT '用户角色',
+  `user_head_images` varchar(64) DEFAULT NULL COMMENT '用户头像',
+  `description` text COMMENT '用户描述',
+  `user_status` smallint(3) DEFAULT NULL COMMENT '用户状态',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `cr_user` */
 
 /*Table structure for table `sys_button` */
 
