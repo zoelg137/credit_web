@@ -35,7 +35,7 @@ pageContext.setAttribute("basePath",basePath);
                     <div class="ibox-title">
                         <h5>线索悬赏</h5>
                         <div class="ibox-tools">
-                            <a href="${basePath }user/user_reward_add.jsp" class="btn btn-primary btn-xs">发布悬赏</a>
+                            <a href="${basePath }user/user_reward_add.jsp" class="btn btn-primary btn-xs" target="_self">发布悬赏</a>
                         </div>
                     </div>
                     <div class="ibox-content">
@@ -70,7 +70,7 @@ pageContext.setAttribute("basePath",basePath);
 											<td>湛*市雄立房产有限公司</td>
 											<td>1.00金额(万元)</td>
 											<td><span class="label label-warning">悬赏中</span></td>
-											<td><a href="${basePath }user/user_reward_details.jsp">查看</a></td>
+											<td><a href="${basePath }user/user_reward_details.jsp" target="_self">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">找车</span></td>
@@ -78,7 +78,7 @@ pageContext.setAttribute("basePath",basePath);
 											<td>张三</td>
 											<td>5.00金额(万元)</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="${basePath }user/user_reward_details.jsp">查看</a></td>
+											<td><a href="${basePath }user/user_reward_details.jsp" target="_self">查看</a></td>
 										</tr>
 										<tr>
 											<td><span class="label label-warning">找房产</span></td>
@@ -86,7 +86,7 @@ pageContext.setAttribute("basePath",basePath);
 											<td>湛*市</td>
 											<td>11.00金额(万元)</td>
 											<td><span class="label label-warning">招标中</span></td>
-											<td><a href="${basePath }user/user_reward_details.jsp">查看</a></td>
+											<td><a href="${basePath }user/user_reward_details.jsp" target="_self">查看</a></td>
 										</tr>
 									</tbody>
 								</table>

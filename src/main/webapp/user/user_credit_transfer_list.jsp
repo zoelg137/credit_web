@@ -69,35 +69,35 @@ pageContext.setAttribute("basePath",basePath);
 							<td>谭*晓</td>
 							<td><i class="fa fa-clock-o"></i> 1.40</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i>20%-30%</td>
-							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp" target="_self">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-warning">湖南</span></td>
 							<td>徐子崴</td>
 							<td><i class="fa fa-clock-o"></i> 10.40</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i>30%-40%</td>
-							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp" target="_self">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-warning">江苏</span></td>
 							<td>姜岚昕</td>
 							<td><i class="fa fa-clock-o"></i> 1.30</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i> 54%-60%</td>
-							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp" target="_self">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-warning">江苏</span></td>
 							<td>武汉大兵哥</td>
 							<td><i class="fa fa-clock-o"></i> 2.20</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i>12%-25%</td>
-							<td>查看</td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp" target="_self">查看</a></td>
 						</tr>
 						<tr>
 							<td><span class="label label-primary">湖北</span></td>
 							<td>荆莹儿</td>
 							<td><i class="fa fa-clock-o"></i> 9.40</td>
 							<td class="text-navy"><i class="fa fa-level-up"></i> 22%-30%</td>
-							<td><a href="${basePath }user/user_credit_transfer_details.jsp">查看</a></td>
+							<td><a href="${basePath }user/user_credit_transfer_details.jsp" target="_self">查看</a></td>
 						</tr>
 					</tbody>
 				</table>
