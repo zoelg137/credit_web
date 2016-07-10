@@ -58,7 +58,7 @@
                                         <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>登 录</strong>
                                         </button>
                                         <label><input type="checkbox" class="i-checks">自动登录</label>
-                                        <label><a  href="">忘记密码?</a></label>
+                                        <label><a  href="forgot_pwd.jsp">忘记密码?</a></label>
                                     </div>
                                 </form>
                             </div>
