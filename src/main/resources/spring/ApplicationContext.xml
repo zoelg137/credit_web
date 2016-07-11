@@ -84,43 +84,5 @@
  	
  	<tx:annotation-driven transaction-manager="transactionManager" />
 	
-	<!-- ================ Shiro start ================ -->
-		<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-		   <!-- 
-			<property name="realm" ref="ShiroRealm" />
-			 -->
-		</bean>
-		
-		<!--Realm 
-		<bean id="ShiroRealm" class="com.gvtv.manage.base.interceptor.shiro.ShiroRealm" ></bean>
-         -->
-		<!-- rights -->
-		<bean id="gvrts" class="com.gvtv.manage.base.filter.shiro.RightsFilter"></bean>
-	
-		<!-- Shiro Filter -->
-		<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
-			<property name="securityManager" ref="securityManager" />
-			<property name="loginUrl" value="/" />
-			<property name="successUrl" value="/main" />
-			<property name="unauthorizedUrl" value="/login_toLogin" />
- 			<property name="filters">
-				<map>
-					<entry key="gvrts" value-ref="gvrts" />
-				</map>
-			</property>
-			<property name="filterChainDefinitions">
-				<value>
-				/static/** 		= anon
-	           	/code 			= anon
-	           	/login_login     	= anon
-	           	/logout     	= anon
-	           	/sys/index       = anon
-	           	/user/unauthorized  = anon
-	           	/user/editPwd  = anon
-	           	/**					= gvrts
-				</value>
-			</property>
-		</bean>
-	<!-- ================ Shiro end ================ -->
-	
+
 </beans>
