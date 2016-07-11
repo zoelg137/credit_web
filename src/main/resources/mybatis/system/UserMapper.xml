@@ -27,21 +27,18 @@
 		where 1=1
 		<if test="loginName != null and password != null">
 	  	and	(
-	  		(user_phone = #{loginName} and password = #{password})
+	  		(user_phone = #{loginName} and user_pwd = #{password})
 	  		or
-	  		(email = #{loginName} and password = #{password})
-	  		) and user_status != -1
+	  		(user_email = #{loginName} and user_pwd = #{password})
+	  		) 
+	  	and user_status != -1
 		</if>
 		<if test="userId != null">
 		and user_id = #{userId}
 		</if>
 	</select>
 	
-	<update id="updateLastLogin" parameterType="User">
-		update sys_user set 
-		last_login=#{lastLogin} 
-		where user_id=#{userId}
-	</update>
+
 	
 	<select id="count" parameterType="PageData" resultType="int">
 		select count(1)
@@ -93,14 +90,7 @@
 	</insert>
 	
 	
-	<select id="getByName" parameterType="String" resultType="PageData">
-		select 
-		  	user_id
-		from 
-			sys_user
-		where status != -1
-		and	login_name = #{login_name}
-	</select>
+
 	
 	<update id="edit" parameterType="PageData">
 		update sys_user set
@@ -121,45 +111,4 @@
 		where
 			user_id		= #{userId}
 	</update>
-	
-	<update id="delete" parameterType="Integer">
-		update sys_user set
-			status	= -1
-		where
-			user_id	= #{userId}
-	</update>
-	
-	<update id="batchDelete" parameterType="java.util.List">
-		update sys_user set
-			status	= -1
-		where
-		
-			user_id	in
-		<foreach collection="list" item="id" open="(" separator="," close=")">
-			#{id}
-		</foreach>
-	</update>
-	
-	<select id="listUserRoleByUserId" parameterType="Integer" resultType="PageData">
-		select
-			id,
-			user_id userId,
-			role_id roleId
-		from sys_user_role
-		where user_id = #{userId}
-	</select>
-	
-	<delete id="deleteUserRoleByUserId" parameterType="Integer">
-		delete from sys_user_role where user_id = #{userId}
-	</delete>
-	
-	<insert id="saveUserRoles" parameterType="java.util.List">
-		insert into sys_user_role (
-			user_id,
-			role_id
-		) values
-		<foreach collection="list" item="item" index="index" separator="," >
-	        (#{item.userId},#{item.roleId})
-	    </foreach>
-	</insert>
 </mapper>
