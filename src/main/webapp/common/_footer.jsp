@@ -9,7 +9,7 @@ pageContext.setAttribute("basePath",basePath);
 %>
 <!-- .subfooter start -->
 <div class="subfooter" style="background-color: #555555;">
-	<div class="container">
+	<div  class="container">
 		<div class="row" style="margin-top: 50px">
 			<div class="col-md-3" style="color: #fff">
 				<p class="text-left">Copyright © 2016 易收（深圳）网络科技有限公司 版权所有</p>

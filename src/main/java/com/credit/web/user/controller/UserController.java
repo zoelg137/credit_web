@@ -27,9 +27,10 @@ public class UserController extends BaseController{
 		PageData pd = new PageData();
 		pd.put("loginName", loginName);
 		pd.put("password", password);
-		userWebService.login(pd);
+		pd=userWebService.login(pd);
+		request.getSession().setAttribute("userInfo",pd);
 		ModelAndView mv = this.getModelAndView();
-		mv.setViewName("/user/user_main");
+		mv.setViewName("redirect:/user/user_main.jsp");
 		return mv;
 	}
 	

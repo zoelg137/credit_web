@@ -20,6 +20,9 @@
             <div class="wrapper wrapper-content">
                 <div class="container">
                     <jsp:include page="/user/user_index.jsp"></jsp:include>
+                    1.${userEmail}<br/>
+                    2.${user_Email }<br/>
+                    3.${userInfo.userEmail }<br/>
                 </div>
 
             </div>
